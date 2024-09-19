@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package miprimeraaplicacion;
 
@@ -8,18 +8,14 @@ package miprimeraaplicacion;
  *
  * @author Adrian
  */
-public class PantallaDialogo extends javax.swing.JFrame {
+public class PantallaDialogo extends javax.swing.JDialog {
 
     /**
      * Creates new form PantallaDialogo
      */
     public PantallaDialogo(java.awt.Frame parent, boolean modal) {
-        super (parent, modal);
+        super(parent, modal);
         initComponents();
-    }
-
-    PantallaDialogo(PantallaMain aThis, boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     /**
@@ -33,7 +29,7 @@ public class PantallaDialogo extends javax.swing.JFrame {
 
         jButtonVolver = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jButtonVolver.setText("Volver");
         jButtonVolver.addActionListener(new java.awt.event.ActionListener() {
@@ -47,23 +43,23 @@ public class PantallaDialogo extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(154, 154, 154)
+                .addGap(152, 152, 152)
                 .addComponent(jButtonVolver)
-                .addContainerGap(174, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(114, 114, 114)
+                .addGap(113, 113, 113)
                 .addComponent(jButtonVolver)
-                .addContainerGap(163, Short.MAX_VALUE))
+                .addContainerGap(164, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonVolverActionPerformed
-        //Ocultar el cuadro de diálogo
+        // TODO add your handling code here:
         setVisible(false);
     }//GEN-LAST:event_jButtonVolverActionPerformed
 
@@ -94,7 +90,7 @@ public class PantallaDialogo extends javax.swing.JFrame {
         }
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 PantallaDialogo dialog = new PantallaDialogo(new javax.swing.JFrame(), true);
@@ -106,7 +102,7 @@ public class PantallaDialogo extends javax.swing.JFrame {
                 });
                 dialog.setVisible(true);
             }
-        }); 
+        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

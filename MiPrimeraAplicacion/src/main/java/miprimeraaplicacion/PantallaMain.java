@@ -42,16 +42,16 @@ public class PantallaMain extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(138, 138, 138)
+                .addGap(147, 147, 147)
                 .addComponent(jButtonAbrir)
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addContainerGap(98, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(120, 120, 120)
+                .addGap(111, 111, 111)
                 .addComponent(jButtonAbrir)
-                .addContainerGap(157, Short.MAX_VALUE))
+                .addContainerGap(166, Short.MAX_VALUE))
         );
 
         pack();
@@ -59,7 +59,7 @@ public class PantallaMain extends javax.swing.JFrame {
 
     private void jButtonAbrirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAbrirActionPerformed
         // TODO add your handling code here:
-        PantallaDialogo pantallaDialogo = new PantallaDialogo (this, true);
+        PantallaDialogo pantallaDialogo = new PantallaDialogo (this,true);
         pantallaDialogo.setVisible(true);
     }//GEN-LAST:event_jButtonAbrirActionPerformed
 
